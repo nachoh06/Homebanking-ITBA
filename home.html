@@ -75,36 +75,124 @@
         </div>
       </div>
     </nav>
+    <!-- contenido principal -->
     <main>
-      <!-- contenido principal -->
       <div class="container-fluid">
         <div class="row h-100">
           <!--Columa izquierda-->
-          <div class="col-12 col-lg-8">
-            <div class="row">
-              <div class="col-12 col-lg-6 p-2">
-              <article class="card h-100 bg-primary p-2">
-                <h2>Cuentas</h2>
-                <p>$130.125</p>
-              </article>             
-              </div>
-              <div class="col-12 col-lg-6 p-2">
-                <article class="card h-100 bg-success p-2">
-                  <h2>Inversiones</h2>
-                  <h4>$456.789</h4>
-                  <h6>(Tenencia consolidada)</h6>
-                  <button>Plazos fijos</button>
-                  <button>Títulos</button>
-                  <button>Fondos Comunes de Inversión</button>
-                </article>            
+          <div class="col-12 col-lg-4">
+            <div class="row h-30 p-2">
+              <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                <h2 class="border-bottom border-1 card-font">Cuentas</h2>
+                <button class="btn btn-sm btn-secondary rounded-4">
+                  <h6>Mi CBU</h6>
+                </button>
+                <div class="d-flex">
+                  <h1>$130.125</h1>
+                  <button class="rounded-4 m-2 w-50 border-0 btn btn-sm btn-secondary ">
+                    <h6>Ocultar Balance </h6>
+                  </button>
                 </div>
+              </article> 
+              </div>
+            
+              <div class="row p-2">
+                <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                  <div class="row">
+                  <div class="col-4 col-lg-4">
+                      <button type="button" class="btn btn-sm btn-secondary rounded-pill" style="width: 5rem; height:5rem;">
+                        <img src="images\credit-cards.png" width="50rem" height="50rem">
+                      </button>
+                      <h6>Depositar</h6>
+                  </div>
+                  <div class="col-4 col-lg-4">
+                      <button type="button" class="btn btn-sm btn-secondary rounded-pill" style="width: 5rem; height:5rem;">
+                        <img src="images\credit-cards.png" width="50rem" height="50rem">
+                      </button>
+                      <h6>Extraer</h6>
+                  </div>
+                  <div class="col-4 col-lg-4">
+                    <button type="button" class="btn btn-sm btn-secondary rounded-pill" style="width: 5rem; height:5rem;">
+                      <img src="images\credit-cards.png" width="50rem" height="50rem">
+                    </button>
+                    <h6>Pagar</h6>
+                </div>
+                </div>
+               </article>             
+              </div>
+
+              <div class="row p-2">
+                <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                  <div class="row">
+                  <div class="col-4">
+                      <button type="button" class="btn btn-sm btn-secondary rounded-pill" style="width: 5rem; height:5rem;">
+                        <img src="images\credit-cards.png" width="50rem" height="50rem">
+                      </button>
+                      <h6>Nueva transferencia</h6>
+                  </div>
+                  <div class="col-4">
+                      <button type="button" class="btn btn-sm btn-secondary rounded-pill" style="width: 5rem; height:5rem;">
+                        <img src="images\credit-cards.png" width="50rem" height="50rem">
+                      </button>
+                      <h6>Dividir gastos</h6>
+                  </div>
+
+                  <div class="col-4">
+                    <button type="button" class="btn btn-sm btn-secondary rounded-pill" style="width: 5rem; height:5rem;">
+                      <img src="images\credit-cards.png" width="50rem" height="50rem">
+                    </button>
+                    <h6>Comprobantes</h6>
+                </div>
+                </div>
+               </article>             
+              </div>
+
             </div>
-            <div class="row">
-              <div class="col-12 col-lg-6 p-2">
-                <article class="card h-100 bg-danger p-2">
-                    <h2>Tarjetas</h2>
-                    <!--Inicio Carrusel para tarjetas-->
-                    <div class="container">
+          <!--Columna medio-->
+          <div class="col-12 col-lg-4">
+                <div class="row h-100 p-2">
+                  <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                    <h2 class="border-bottom border-1 card-font">Movimientos</h2>
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table> 
+                  </article>  
+                </div>        
+              </div>
+          <!--Columa derecha-->
+          <div class="col-12 col-lg-4">
+            <div class="row h-30 p-2">
+              <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                <div class="card-content">
+                <h2 class="border-bottom border-1 card-font">Tarjetas</h2>
+                <!--Inicio Carrusel para tarjetas-->
+                <div class="container">
                       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -131,29 +219,56 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
-                    </div>
-                    <!--Fin Carrusel para tarjetas-->
-                </article>
+                </div>
+                <!--Fin Carrusel para tarjetas-->
               </div>
-              <div class="col-12 col-lg-6 p-2">
-                <article class="card h-100 bg-success p-2">
-                  <h2>Servicios</h2>
-                  <h4>$456.789</h4>
-                  <h6>(Tenencia consolidada)</h6>
-                </article>
-              </div>
+              </article>
             </div>
 
-          </div>
-          <!--Columa derecha-->
-          <div class="col-12 col-lg-4">
-            <div class="row h-100">
-              <div class="col-12 p-2">
-              <article class="card h-100 bg-secondary p-2">
-                <h2>Movimientos</h2>
-                <p>Movimientos</p> 
 
-               </article>           
+            <div class="row h-20 p-2">
+              <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                <div class="card-content">
+                  <div class="d-flex">
+                    <img src="images\credit-cards.png" width="50" height="50">
+                    <h2>Tarjetas de crédito</h2>
+                  </div>
+              </div>
+             </article>
+            </div>
+
+                <div class="row h-20 p-2">
+                  <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                    <div class="card-content">
+                      <div class="d-flex">
+                        <img src="images\credit-cards.png" width="50" height="50">
+                        <h2>Inversiones</h2>
+                      </div>
+                  </div>
+                 </article> 
+                </div>
+
+                <div class="row h-20 p-2">
+                  <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                    <div class="card-content">
+                      <div class="d-flex">
+                        <img src="images\credit-cards.png" width="50" height="50">
+                        <h2>Préstamos</h2>
+                      </div>
+                  </div>
+                 </article> 
+                </div>
+
+                <div class="row h-20 p-2">
+                  <article class="card h-100 border border-5 border-primary rounded-4 text-primary">
+                    <div class="card-content">
+                      <div class="d-flex">
+                        <img src="images\credit-cards.png" width="50" height="50">
+                        <h2>Otros productos</h2>
+                      </div>
+                  </div>
+                 </article> 
+                </div>         
               </div>
             </div>
            </div>
