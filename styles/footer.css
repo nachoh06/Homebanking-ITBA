@@ -43,10 +43,6 @@
     margin-right: 0.25em;
   }
   
-  ul.box li {
-    display: inline;
-  }
-  
   .box a {
     color: #999;
   }

@@ -1,0 +1,43 @@
+ul {
+    margin: 0 !important;
+    padding-left: 0 !important;
+}
+
+section {
+    min-height: 200px;
+}
+
+
+.one {
+    background-color: #eaf9fa;
+    padding: 1rem;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.list-icons {
+    display: flex;
+    list-style: none;
+    flex: 1;
+}
+
+.list-icons li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-icons li span {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.list-icons li:hover img{
+    transform: scale(1.15);
+}
+
+.list-icons li:hover span{
+    font-weight: 700;
+}
