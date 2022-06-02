@@ -1,27 +1,30 @@
-(function(){
+(function(){ 
     var lista = document.getElementById("lista"),
-        tareaInput = document.getElementById("tareaInput"),
-        btnNuevaTarea = document.getElementById("btn-agregar");
+        nombreInput = document.getElementById("nombreInput"),
+        mailInput = document.getElementById("mailInput"),
+        montoInput = document.getElementById("montoInput"),
+        btnNuevaPersona = document.getElementById("btn-agregar");
 
-    var agregarTarea = function(){
-        var tarea= tareaInput.value,
-            nuevaTarea = document.createElement("li"),
+    var agregarPersona = function(){
+        var nombre= nombreInput.value,
+            ingreso=montoInput.value;
+            nuevoItem = document.createElement("li"),
             enlace = document.createElement("a"),
-            contenido = document.createTextNode(tarea);
+            contenido = document.createTextNode(nombre+" " +ingreso);
+
     
-    
-        if(tarea === ""){
-            tareaInput.setAttribute("placeholder","Agregar una tarea válida");
-            tarea.className="Error";
+        if(nombre === ""){
+            nombreInput.setAttribute("placeholder","Agregar una tarea válida");
+            nombre.className="Error";
             return false;
         }
 
         enlace.appendChild(contenido);
         enlace.setAttribute("href","#");
-        nuevaTarea.appendChild(enlace);
-        lista.appendChild(nuevaTarea);
+        nuevoItem.appendChild(enlace);
+        lista.appendChild(nuevoItem);
 
-        tareaInput.value ="";
+        nombreInput.value ="";
 
         for(var i=0; i <=lista.children.length -1;i++){
             lista.children[i].addEventListener("click",function(){
@@ -32,24 +35,24 @@
     };
 
     var comprobarInput = function(){
-        tareaInput.className="";
-        tareaInput.setAttribute("placeholder","PIPON");
+        nombreInput.className="";
+        nombreInput.setAttribute("placeholder","PIPON");
 
     };
 
 
-    var eliminarTarea = function(){
+    var eliminarPersona = function(){
         this.parentNode.removeChild(this);
     };
 
-    btnNuevaTarea.addEventListener("click",agregarTarea);
-    tareaInput.addEventListener("click",comprobarInput);
+    btnNuevaPersona.addEventListener("click",agregarPersona);
+    nombreInput.addEventListener("click",comprobarInput);
 
     for(var i=0; i<=lista.children.length -1;i++){
-        lista.children[i].addEventListener("click",eliminarTarea);
+        lista.children[i].addEventListener("click",eliminarPersona);
 
 
     }
 
-
+    
 }())
