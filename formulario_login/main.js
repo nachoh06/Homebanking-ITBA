@@ -14,7 +14,7 @@
 
     
         if(nombre === ""){
-            nombreInput.setAttribute("placeholder","Agregar una tarea válida");
+            nombreInput.setAttribute("placeholder","Agregar datos validados");
             nombre.className="Error";
             return false;
         }
