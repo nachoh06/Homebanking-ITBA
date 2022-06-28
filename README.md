@@ -1,3 +1,2 @@
-## HOME BANKING - ITBANK
-
-### Deployed on -> https://nachoh06.github.io/Homebanking-ITBA
+ITBANK - Homebanking
+website ->  https://lxrpetrosino.github.io/itbank_hb/
