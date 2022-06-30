@@ -50,7 +50,7 @@ padding: 150px;
 }
 
 .two .card{
-    width: 35vw;
+    width: 45vw;
     margin: 1rem;
     background-color: blueviolet;
     min-height: 80vh;
@@ -85,6 +85,12 @@ margin-top: 2px;
 .card2{
     background-image: url(../images/card2.jpeg);
 }
+
+.card-body{padding: 0%;}
+.card3{ background-color: white;
+    padding: 0%;
+}
+
 
 .three{
     background-color: #eaf9fa;
